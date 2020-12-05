@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>text reading </title>
+    </head>
+    <body>
+        <div>
+            <p id="para"> none.</p>
+            <button onclick="func()">
+                click 
+            </button>
+        </div>
+        <script>
+            console.log("text retrival");
+            async function func(){
+                const res= await fetch("text.txt");
+                const tex=await res.text();
+                console.log(res);
+                document.getElementById("para").innerText=tex;
+            }
+        </script>
+    </body>
+</html>
