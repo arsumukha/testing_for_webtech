@@ -13,16 +13,25 @@
         
     
     </head>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <h1 class="display-4">Visualization</h1>
+            <div class="container-fluid">
+                    <div class="col-12">
+                        <h4>Graph your way through the data </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <navbar class="navbar-expand-lg navbar-light bg-light">
+            <div></div>
+        </navbar>
+    </header>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1>Visualization </h1>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-12 content">
-                    <h2>Graph your numerical data:</h2>
+                    <h3>Graph your numerical data:</h3>
                 </div>
             </div>
                 <div class="row">
@@ -30,15 +39,39 @@
                             <h4>Enter x axis :</h4>
                     </div>
                     <div class="col-5 content">
-                        <input type="text" id="x-axis" placeholder="enter col for x">
+                        <input class="txt-box" type="text" id="x" placeholder="enter col for x">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-7 content">
-                        <h4>Enter the y axis :</h4>
+                        <h4>Enter the y axis for 1 :</h4>
                     </div>
                     <div class="col-5 content">
-                        <input type="text" id="y-axis" placeholder="enter col for y ">
+                        <input class="txt-box" type="text" id="y" placeholder="enter col for y ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 content">
+                        <h4>Enter the y axis for 2 :</h4>
+                    </div>
+                    <div class="col-5 content">
+                        <input class="txt-box" type="text" id="y1" placeholder="enter col for y ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 content">
+                        <h4>Enter the y axis for 3 :</h4>
+                    </div>
+                    <div class="col-5 content">
+                        <input class="txt-box" type="text" id="y2" placeholder="enter col for y ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 content">
+                        <h4>Enter the file name:</h4>
+                    </div>
+                    <div class="col-5 content">
+                        <input class="txt-box" type="text" id="filename" placeholder="enter file name">
                     </div>
                 </div>
                 <div class="row">
@@ -57,7 +90,7 @@
         
         <div class="row" id="chart_style">
             <div class="col-12">
-        <canvas id="Charts" width="400" height="400"></canvas>
+        <canvas id="Charts" width="400px" height="400px"></canvas>
             </div>   
     </div>
         <script src="graph.js"></script>
